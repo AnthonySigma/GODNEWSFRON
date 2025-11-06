@@ -1,0 +1,90 @@
+/* Media Queries y Responsive Design */
+
+/* Extra small devices (phones, menos de 640px) */
+@media (max-width: 639px) {
+  .header-logo h1 {
+    font-size: 1.25rem;
+  }
+
+  .news-card-title {
+    font-size: 1.125rem;
+  }
+
+  .news-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .news-card-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .category-filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+  }
+
+  .category-filters::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+/* Small devices (tablets, 640px y más) */
+@media (min-width: 640px) {
+  main {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Medium devices (tablets horizontales, 768px y más) */
+@media (min-width: 768px) {
+  .header-content {
+    height: 5rem;
+  }
+
+  .news-card-title {
+    font-size: 1.375rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px y más) */
+@media (min-width: 1024px) {
+  main {
+    padding: 3rem 0;
+  }
+
+  .newspapers-grid {
+    gap: 2rem;
+  }
+
+  .news-grid {
+    gap: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1280px y más) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Modo impresión */
+@media print {
+  .header,
+  .footer,
+  .category-filters,
+  .header-search,
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .news-card,
+  .newspaper-card {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+}

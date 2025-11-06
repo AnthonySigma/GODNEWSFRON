@@ -1,0 +1,50 @@
+/* Tarjeta de Periódico */
+.newspaper-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newspaper-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
+
+/* Imagen de portada */
+.newspaper-card-image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Información */
+.newspaper-card-info {
+  padding: 1rem;
+}
+
+.newspaper-card-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.newspaper-card-country {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.newspaper-card-category {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
